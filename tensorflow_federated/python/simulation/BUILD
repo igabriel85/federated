@@ -95,5 +95,8 @@ py_test(
     name = "from_tensor_slices_client_data_test",
     size = "small",
     srcs = ["from_tensor_slices_client_data_test.py"],
-    deps = [":from_tensor_slices_client_data"],
+    deps = [
+        ":from_tensor_slices_client_data",
+        "//third_party/py/six",
+    ],
 )

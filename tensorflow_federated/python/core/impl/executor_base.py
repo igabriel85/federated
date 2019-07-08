@@ -19,11 +19,9 @@ from __future__ import division
 from __future__ import print_function
 
 import abc
-import six
 
 
-@six.add_metaclass(abc.ABCMeta)
-class Executor(object):
+class Executor(object, metaclass=abc.ABCMeta):
   """Represents the abstract interface that all executors must implement.
 
   NOTE: This component is only available in Python 3.
